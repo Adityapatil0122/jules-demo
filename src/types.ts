@@ -1,9 +1,11 @@
-export interface CoffeeEntry {
+export interface IceCream {
   id: string;
-  type: string;
-  size: string; // in ml or oz
-  caffeineAmount: number; // in mg
-  timestamp: string; // ISO string
+  name: string;
+  description: string;
+  price: number;
+  imageUrl: string;
 }
 
-export type CoffeeLog = CoffeeEntry[];
+export interface CartItem extends IceCream {
+  quantity: number;
+}
